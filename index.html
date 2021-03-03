@@ -78,7 +78,7 @@
 					type: "GET",
 					dataType: "json",
 					url: url,
-					success: bondJSON
+					success: DisneyJSON
 				});
 			}
 			
@@ -112,7 +112,7 @@
 						<b>Box Office</b>: ${item.BoxOffice}
 						<br/>
 						<b>Writers</b>: ${item.Writers}
-						<div class = "pic"><img src="thumbnails/${item.Image}"/></div>
+						<div class = "pic"><img src="images/${item.Image}"/></div>
 					</div>`;
 					
 					$("#films").append(text);
