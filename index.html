@@ -1,10 +1,41 @@
 <html>
 	<head>
-		<title>Bond Web Service Demo</title>
+		<title>The 10 Best Disney films </title>
 		<style>
 			body {font-family:georgia;}
+
+			#films {
+				max-width:600px;
+				margin:5px;
+				padding:2px;
+			}
+
+			#films > div {
+				padding:5px;
+				min-height:40px;
+				margin-bottom:5px;
+				border:1px solid #E77D2C;
+				-moz-border-radius: 5px; 
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				position:relative; /* required to place #pic to right */
+			}
+
+			#films h3 {
+				font-family:georgia;
+				padding:5px;
+				color:#fff;
+				background:#E77D2C;
+				margin:0;
+			}
+
+			.pic{
+				position:absolute;
+				right:10px;
+				top:10px;
+			}
 		</style>
-		<link rel="stylesheet" href="css/bonds.css"/>
+		//<link rel="stylesheet" href="css/bonds.css"/>
 		<script src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
 		<script type="text/javascript">
@@ -77,7 +108,7 @@
 						<br/>
 						<b>Year</b>: ${item.Year}
 						<br/>
-						<b>Bond</b>: ${item.Bond}
+						<b>Disney</b>: ${item.Disney }
 						<br/>
 						<b>Box Office</b>: ${item.BoxOffice}
 						<br/>
@@ -92,9 +123,9 @@
 	</head>
 	
 	<body>
-		<h1>Bond Web Service</h1>
-		<a href="year" class="category">Bond Films By Year</a><br />
-		<a href="box" class="category">Bond Films By International Box Office Totals</a>
+		<h1>Disney Movies Web Service</h1>
+		<a href="year" class="category">Disney Films By Year</a><br />
+		<a href="box" class="category">Disney Films By International Box Office Totals</a>
 		<h3 id="filmtitle">Title Will Go Here</h3>
 		<div id="films">
 			Results go here
